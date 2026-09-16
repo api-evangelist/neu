@@ -19,11 +19,13 @@ accessModel:
   public: false
   label: Unknown
   confidence: low
-  source: []
+  source:
+  - url: https://neucleans.com/
+    status: 302
+    note: declared website redirects to hugedomains.com — a domain sales/parking service, so the domain
+      has lapsed rather than moved to an acquirer (probed 2026-09-03, roadmap#169)
   generated: '2026-07-22'
   method: derived
-  source:
-  - {url: 'https://neucleans.com/', status: 302, note: 'declared website redirects to hugedomains.com — a domain sales/parking service, so the domain has lapsed rather than moved to an acquirer (probed 2026-09-03, roadmap#169)'}
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/neu.png
 name: Neu
 description: Neu is a company surfaced as a portfolio company of techstars and added to the API Evangelist
@@ -37,17 +39,17 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.23'
 created: '2026-07-17'
-modified: '2026-07-20'
+modified: '2026-09-15'
 x-enrichment:
   date: '2026-07-20'
   status: nochange
   artifacts_added: 0
   pass: local-v1
-  note: 'neucleans.com is a parked/for-sale domain (302 -> hugedomains.com, NameBright
-    parking NS); no live website, docs, or API surface. No artifacts to enrich; no
-    fabrication.'
+  note: neucleans.com is a parked/for-sale domain (302 -> hugedomains.com, NameBright parking NS); no
+    live website, docs, or API surface. No artifacts to enrich; no fabrication.
 tags:
 - Company
+- Defunct
 apis: []
 maintainers:
 - FN: Kin Lane
